@@ -12,11 +12,15 @@ class TV:
     def setMarca(self,marca):
         self.marca=marca
     def setCanal(self, canal):
-        self.canal=canal
+        if self.estado==True:
+            if canal>=0 and canal<=120:
+                self.canal=canal
     def setPrecio(self, precio):
         self.precio=precio
     def setVolumen(self, volumen):
-        self.volumen=volumen
+        if self.estado==True:
+            if volumen>=0 and volumen<=7:
+                self.volumen=volumen
     def setControl(self, control):
         self.control=control
     @staticmethod
