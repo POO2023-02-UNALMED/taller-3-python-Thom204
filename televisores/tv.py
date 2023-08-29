@@ -43,19 +43,23 @@ class TV:
         if (self.estado!=True):
             self.estado=True
     def turnOff(self):
-        if (self.estado):
+        if (self.estado==True):
             self.estado=False
 
     def canalUp(self):
-        if self.canal<120 and self.estado:
-            self.canal+=1
+        if self.estado==True:
+            if self.canal<120:
+                self.canal+=1
     def canalDown(self):
-        if self.canal>0 and self.estado:
-            self.canal-=1
+        if self.estado==True:
+            if self.canal>0:
+                self.canal-=1
 
     def volumenUp(self):
-        if self.volumen<7 and self.estado:
-            self.volumen+=1
+        if self.estado==True:
+            if self.volumen<7:
+                self.volumen+=1
     def volumenDown(self):
-        if self.volumen>1 and self.estado:
-            self.volumen-=1
+        if self.estado==True:
+            if self.volumen>1:
+                self.volumen-=1
