@@ -22,7 +22,7 @@ class TV:
     def setVolumen(self, vol):
         if self.estado==True:
             if vol>=0 and vol<=7:
-                self.volumen=volumen
+                self.volumen=vol
 
     def setControl(self, control):
         self.control=control
