@@ -19,9 +19,9 @@ class TV:
 
     def setPrecio(self, precio):
         self.precio=precio
-    def setVolumen(self, volumen):
+    def setVolumen(self, vol):
         if self.estado==True:
-            if volumen>=0 and volumen<=7:
+            if vol>=0 and vol<=7:
                 self.volumen=volumen
 
     def setControl(self, control):
@@ -48,10 +48,10 @@ class TV:
         return self.estado
     def turnOn(self):
         if (self.estado!=True):
-            self.estado=bool(True)
+            self.estado=True
     def turnOff(self):
         if (self.estado==True):
-            self.estado=bool(False)
+            self.estado=False
 
     def canalUp(self):
         if self.estado==True:
@@ -59,7 +59,7 @@ class TV:
                 self.canal+=1
     def canalDown(self):
         if self.estado==True:
-            if self.canal>0:
+            if self.canal>1:
                 self.canal-=1
 
     def volumenUp(self):
@@ -68,5 +68,5 @@ class TV:
                 self.volumen+=1
     def volumenDown(self):
         if self.estado==True:
-            if self.volumen>1:
+            if self.volumen>0:
                 self.volumen-=1
