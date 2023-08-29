@@ -14,7 +14,7 @@ class TV:
 
     def setCanal(self, canal):
         if self.estado==True:
-            if canal>=0 and canal<=120:
+            if canal>=1 and canal<=120:
                 self.canal=canal
 
     def setPrecio(self, precio):
