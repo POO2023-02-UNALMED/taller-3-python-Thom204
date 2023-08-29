@@ -2,12 +2,12 @@ class TV:
     canal=1
     volumen=1
     precio=500
-    _numTv=0
+    numTv=0
 
     def __init__(self, marca, estado):
         self.marca=marca
         self.estado=bool(estado)
-        TV._numTv+=1
+        TV.numTv+=1
 
     def setMarca(self,marca):
         self.marca=marca
