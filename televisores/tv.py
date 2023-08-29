@@ -6,7 +6,7 @@ class TV:
 
     def __init__(self, marca, estado):
         self.marca=marca
-        self.estado=bool(estado)
+        self.estado=estado
         TV.numTv+=1
 
     def setMarca(self,marca):
